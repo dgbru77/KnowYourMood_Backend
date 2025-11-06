@@ -89,13 +89,25 @@
 
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.example.demo.KnowyourmoodApplication</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+<profiles>
+    <profile>
+        <id>production</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+        </activation>
+    </profile>
+</profiles>
 
 </project>
