@@ -31,4 +31,4 @@ replay_pid*
 /target/
 
 # Ignore application.properties (VERY important)
-application.properties
+
