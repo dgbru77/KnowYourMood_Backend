@@ -100,6 +100,11 @@ public class AuthController {
 
         return ResponseEntity.ok(result);
     }
+@GetMapping("/auth/test")
+public String test() {
+    return "Backend OK";
+}
+
 
 
 }
